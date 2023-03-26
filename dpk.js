@@ -20,7 +20,7 @@ const deterministicPartitionKey = (event) => {
 
   // Instead of Else Statement we are introudicing a negation in IF
   if (!candidate) {
-    candidate = TRIVIAL_PARTITION_KEY;
+    return (candidate = TRIVIAL_PARTITION_KEY);
   }
 
   if (candidate) {
